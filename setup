@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-files=(bin config core elisp init.el snippets)
+files=(bin config core elisp init.el snippets .eshell-aliases)
 
 mkdir -p ~/.emacs.d
 
