@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: elisp
+# key: el
+# group: general
+# --
+#+BEGIN_SRC elisp
+$0
+#+END_SRC

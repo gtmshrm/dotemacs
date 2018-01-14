@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ipython
+# key: p
+# group: general
+# --
+#+BEGIN_SRC ipython :session :results output
+$0
+#+END_SRC

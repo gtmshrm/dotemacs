@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+files=(bin config core elisp init.el snippets)
+
+mkdir -p ~/.emacs.d
+
+echo "Creating symlinks..."
+for file in $files; do
+	ln -s $PWD/$file ~/.emacs.d/$file
+done
+echo "Done."
