@@ -42,7 +42,7 @@
     ("g d" #'dumb-jump-go))
 
   (require-package 'key-chord)
-  (setq key-chord-two-keys-delay 0.4)
+  ;; (setq key-chord-two-keys-delay 0.4)
   (key-chord-mode 1)
   (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
   (key-chord-define evil-insert-state-map "kj" 'evil-normal-state)
