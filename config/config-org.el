@@ -70,19 +70,25 @@
   (setq org-outline-path-complete-in-steps nil)
   (setq org-completion-use-ido t)
 
+
+  ;; Require language
   (require-package 'ob-python)
   (require-package 'ob-ipython)
+
+  ;; Languages to be loaded for execution
   (org-babel-do-load-languages
    'org-babel-load-languages
-   '((emacs-lisp . t)
+   '((shell . t)
      (python . t)
      (ipython . t)))
 
+  ;; Don't ask for confirmation before execution for these languages
   (defun my-org-confirm-babel-evaluate (lang body)
-    (not (member lang '("emacs-lisp" "python" "ipython"))))
+    (not (member lang '("shell" "python" "ipython"))))
   (setq org-confirm-babel-evaluate 'my-org-confirm-babel-evaluate)
 
   (add-hook 'org-babel-after-execute-hook #'org-redisplay-inline-images)
+
 
   (defun /org/org-mode-hook ()
     (toggle-truncate-lines t)
