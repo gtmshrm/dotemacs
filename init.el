@@ -15,6 +15,7 @@
   (when (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
   ;; (unless (display-graphic-p) (menu-bar-mode -1))
   (menu-bar-mode -1)
+  (toggle-frame-maximized)
 
   (defgroup dotemacs nil
     "Custom configuration for dotemacs."
