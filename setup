@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 files=(bin config core elisp init.el snippets .eshell-aliases)
 
@@ -6,6 +6,6 @@ mkdir -p ~/.emacs.d
 
 echo "Creating symlinks..."
 for file in $files; do
-	stow $file -t ~/.emacs.d
+	ln -s $PWD/$file ~/.emacs.d/$file
 done
 echo "Done."
