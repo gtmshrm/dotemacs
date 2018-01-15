@@ -71,21 +71,17 @@
   (setq org-completion-use-ido t)
 
 
-  ;; Require language
-  (require-package 'ob-python)
+  ;; Require ob package of languages for src block
   (require-package 'ob-ipython)
 
-  ;; Languages to be loaded for execution
+  ;; Languages to be loaded for execution of src block
   (org-babel-do-load-languages
    'org-babel-load-languages
-   '((shell . t)
-     (python . t)
-     (ipython . t)))
+   '((ipython . t)  ;; ob-ipython has async mode
+     (shell . t)))
 
-  ;; Don't ask for confirmation before execution for these languages
-  (defun my-org-confirm-babel-evaluate (lang body)
-    (not (member lang '("shell" "python" "ipython"))))
-  (setq org-confirm-babel-evaluate 'my-org-confirm-babel-evaluate)
+  ;; Don't ask for confirmation before execution of src block
+  (setq org-confirm-babel-evaluate nil)
 
   (add-hook 'org-babel-after-execute-hook #'org-redisplay-inline-images)
 
