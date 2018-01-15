@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: shell
+# key: sh
+# group: general
+# --
+#+BEGIN_SRC shell
+$0
+#+END_SRC
