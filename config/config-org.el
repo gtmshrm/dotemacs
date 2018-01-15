@@ -95,8 +95,15 @@
     (setq show-trailing-whitespace t))
   (add-hook 'org-mode-hook #'/org/org-mode-hook)
 
-  (require-package 'ob-async)
-  (require 'ob-async)
+  ;; Async feature for src block
+  ;; Usage: just add `:async` in front of src block
+  ;; Eg: #+BEGIN_SRC elisp :async
+  ;; WARNING: Ipython has in-built async feature and this doesn't goes well with
+  ;;          that. So use this only when other languages src blocks need to be executed asynchronously.
+  ;;          While using ipython src block in async mode, keep this part commented!
+  ;;          Uncomment it only when any language other that ipython needs to be executed asynchronously.
+  ;; (require-package 'ob-async)
+  ;; (require 'ob-async)
 
   (require-package 'org-pomodoro)
   (require 'org-pomodoro)
