@@ -18,6 +18,7 @@
   (setq show-paren-delay 0))
 
 
+(require 'linum-relative)
 (linum-relative-global-mode) ;; doesn't look nice in emacs terminal. remove this!
 
 (line-number-mode t)
