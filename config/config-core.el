@@ -183,7 +183,7 @@
 
 ;; font
 (set-face-attribute 'default nil
-                    :family "Iosevka" ; "Monaco"
+                    :family "Iosevka"
                     :weight 'normal
                     :width 'normal
                     :height 140)
