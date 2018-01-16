@@ -165,9 +165,9 @@
   (after 'python
     (evil-define-key 'normal python-mode-map (kbd "C-c C-p") 'run-python)
     (evil-define-key 'normal python-mode-map (kbd "C-c C-c") 'python-shell-send-buffer)
-    (evil-define-key 'normal python-mode-map (kbd ", ,") 'python-shell-send-string)
-    (evil-define-key 'visual python-mode-map (kbd ", ,") 'python-shell-send-region)
-    (evil-define-key 'normal python-mode-map (kbd ", f") 'python-shell-send-defun))
+    (evil-define-key 'normal python-mode-map (kbd ", r") 'python-shell-send-string)
+    (evil-define-key 'visual python-mode-map (kbd ", r") 'python-shell-send-region)
+    (evil-define-key 'normal python-mode-map (kbd ", m") 'python-shell-send-defun))
 
   (after 'coffee-mode
     (evil-define-key 'visual coffee-mode-map (kbd ", p") 'coffee-compile-region)
