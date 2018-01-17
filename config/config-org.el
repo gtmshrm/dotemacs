@@ -35,7 +35,7 @@
   (setq org-agenda-files `(,org-directory))
   (setq org-capture-templates
         '(("t" "Todo" entry (file+headline org-default-notes-file "INBOX")
-           "* TODO %?\n%U\n%a\n")
+           "* TODO %? :<TAG>:\n%U\n%a\n")
           ("n" "Note" entry (file+headline org-default-notes-file "NOTES")
            "* %? :NOTE:\n%U\n%a\n")
           ("m" "Meeting" entry (file org-default-notes-file)
