@@ -3,6 +3,6 @@
 # key: pi
 # group: general
 # --
-#+BEGIN_SRC ipython :session :ipyfile /tmp/image.png :exports both :results raw drawer
+#+BEGIN_SRC ipython :session :exports both :async t :results raw drawer
 $0
 #+END_SRC

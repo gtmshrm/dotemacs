@@ -3,6 +3,6 @@
 # key: p
 # group: general
 # --
-#+BEGIN_SRC ipython :session :results output
+#+BEGIN_SRC ipython :session :async t :results output
 $0
 #+END_SRC

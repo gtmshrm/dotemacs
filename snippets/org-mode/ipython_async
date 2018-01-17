@@ -1,8 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: ipython_async
-# key: pa
-# group: general
-# --
-#+BEGIN_SRC ipython :session :async t :results output
-$0
-#+END_SRC
