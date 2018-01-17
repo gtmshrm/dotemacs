@@ -179,7 +179,7 @@
 
 
 ;; themes
-(load-theme 'creamsody) ; reversi, sanityinc-solarized-dark, grandshell, ample-zen, ample, manoj-dark
+(load-theme 'zerodark) ; *creamsody, reverse, sanityinc-solarized-dark, grandshell, ample-zen, ample, manoj-dark
 
 ;; font
 (set-face-attribute 'default nil
