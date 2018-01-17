@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # name: ipython_async
-# key: pasync
+# key: pa
 # group: general
 # --
 #+BEGIN_SRC ipython :session :async t :results output

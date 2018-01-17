@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # name: ipython_image
-# key: pimg
+# key: pi
 # group: general
 # --
 #+BEGIN_SRC ipython :session :ipyfile /tmp/image.png :exports both :results raw drawer
