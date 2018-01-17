@@ -17,6 +17,7 @@
 
 (after 'helm
   (require-package 'helm-descbinds)
+  (define-key helm-map (kbd "/") 'helm-execute-persistent-action)
 
 
   (require-package 'helm-flx)
@@ -36,8 +37,6 @@
            (setq helm-ag-base-command "pt -e --nogroup --nocolor"))
           ((executable-find "ack")
            (setq helm-ag-base-command "ack --nogroup --nocolor"))))
-
-  (define-key helm-map (kbd "/") 'helm-execute-persistent-action)
 
   (setq helm-swoop-pre-input-function #'ignore)
   (setq helm-swoop-use-line-number-face t)
