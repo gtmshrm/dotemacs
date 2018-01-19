@@ -12,7 +12,7 @@
 (require-package 'jedi)
 (add-hook 'python-mode-hook 'jedi:setup)
 
-;; (require-package 'elpy)
+(require-package 'elpy)
 ;; (elpy-enable)
 
 (provide 'config-python)
