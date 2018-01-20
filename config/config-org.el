@@ -1,4 +1,6 @@
 (after 'org
+  (setq org-directory "~/Dropbox/org")
+
   (defgroup dotemacs-org nil
     "Configuration options for org-mode."
     :group 'dotemacs
