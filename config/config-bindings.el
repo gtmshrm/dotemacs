@@ -59,7 +59,8 @@
     (", c" #'/eshell/new-split "eshell")
     (", C" #'customize-group)
     (", P" #'package-list-packages "packages")
-    (", h" help-map "help"))
+    (", h" help-map "help")
+    ("g ]" #'etags-select-find-tag-at-point))
 
   (-define-keys evil-visual-state-map
     (", e" #'eval-region))
