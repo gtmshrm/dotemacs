@@ -22,6 +22,21 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
   (interactive "nAlpha: ")
   (set-frame-parameter nil 'alpha alpha))
 
+(defun /utils/build-ctags ()
+  "Build ctags for project. Uses package eproject as dependency."
+  (interactive)
+  (message "building project tags")
+  (let ((root (eproject-root)))
+    (shell-command (concat "ctags -e -R --extra=+fq --exclude=db --exclude=test --exclude=.git --exclude=public -f " root "TAGS " root)))
+  (visit-project-tags)
+  (message "tags built successfully"))
+
+(defun visit-project-tags ()
+  (interactive)
+  (let ((tags-file (concat (eproject-root) "TAGS")))
+    (visit-tags-table tags-file)
+    (message (concat "Loaded " tags-file))))
+
 (defun /utils/google ()
   "Google the selected region if any, display a query prompt otherwise."
   (interactive)

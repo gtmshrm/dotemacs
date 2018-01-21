@@ -77,6 +77,8 @@
 (require-package 'etags-select)
 (setq etags-select-go-if-unambiguous t)
 
+(require-package 'eproject)
+(require 'eproject)
 
 (require-package 'windsize)
 (require 'windsize)
