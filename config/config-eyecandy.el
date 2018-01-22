@@ -84,7 +84,8 @@
   (require-package 'spaceline)
   (require 'spaceline-config)
   (setq spaceline-highlight-face-func #'spaceline-highlight-face-evil-state)
-  ; (spaceline-spacemacs-theme)
+  (set-face-attribute 'spaceline-evil-emacs nil :background "red" :foreground "white")
+  (spaceline-spacemacs-theme)
   (spaceline-info-mode)
   (after "helm-autoloads"
     (spaceline-helm-mode)))
