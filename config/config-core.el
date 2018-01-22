@@ -179,8 +179,8 @@
 
 
 ;; themes
-;; (require-package 'creamsody-theme)
-;; (load-theme 'creamsody) ; *zerodark, reverse, sanityinc-solarized-dark, grandshell, ample-zen, ample, manoj-dark
+(require-package 'creamsody-theme)
+(load-theme 'creamsody) ; *zerodark, reverse, sanityinc-solarized-dark, grandshell, ample-zen, ample, manoj-dark
 
 ;; font
 (set-face-attribute 'default nil
