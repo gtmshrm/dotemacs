@@ -62,9 +62,8 @@
   (when (file-exists-p custom-file)
     (load custom-file))
 
-  (cl-loop for file in (directory-files-recursively config-directory "\\.el$")
+  (cl-loop for file in (reverse (directory-files-recursively config-directory "\\.el$"))
 	   do (condition-case ex
 		  (load (file-name-sans-extension file))
 		('error (with-current-buffer "*scratch*"
 			  (insert (format "[INIT ERROR]\n%s\n%s\n\n" file ex)))))))
-  (put 'downcase-region 'disabled nil)
