@@ -3,6 +3,6 @@
 # key: sh
 # group: general
 # --
-#+BEGIN_SRC shell
+#+BEGIN_SRC sh
 $0
 #+END_SRC
