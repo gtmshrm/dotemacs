@@ -63,6 +63,7 @@
 (after 'flycheck (diminish 'flycheck-mode))
 (after 'aggressive-indent (diminish 'aggressive-indent-mode))
 (after 'counsel (diminish #'counsel-mode))
+(after 'autorevert (diminish #'auto-revert-mode))
 
 
 (if (eq dotemacs-eyecandy/mode-line 'sml)
