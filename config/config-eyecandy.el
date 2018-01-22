@@ -11,6 +11,8 @@
           (const :tag "spaceline" spaceline))
   :group 'dotemacs-eyecandy)
 
+(setq show-mode-line nil)
+
 
 
 (when (eq dotemacs-pair-engine 'emacs)
@@ -66,29 +68,30 @@
 (after 'autorevert (diminish #'auto-revert-mode))
 
 
-(if (eq dotemacs-eyecandy/mode-line 'sml)
-    (progn
-      (require-package 'smart-mode-line)
-      (sml/setup)
-      (after 'evil
-        (defvar dotemacs--original-mode-line-bg (face-background 'mode-line))
-        (defadvice evil-set-cursor-color (after dotemacs activate)
-          (cond ((evil-emacs-state-p)
-                 (set-face-background 'mode-line "#440000"))
-                ((evil-insert-state-p)
-                 (set-face-background 'mode-line "#002244"))
-                ((evil-visual-state-p)
-                 (set-face-background 'mode-line "#440044"))
-                (t
-                 (set-face-background 'mode-line dotemacs--original-mode-line-bg))))))
-  (require-package 'spaceline)
-  (require 'spaceline-config)
-  (setq spaceline-highlight-face-func #'spaceline-highlight-face-evil-state)
-  (set-face-attribute 'spaceline-evil-emacs nil :background "red" :foreground "white")
-  (spaceline-spacemacs-theme)
-  (spaceline-info-mode)
-  (after "helm-autoloads"
-    (spaceline-helm-mode)))
+(when show-mode-line
+  (if (eq dotemacs-eyecandy/mode-line 'sml)
+      (progn
+	(require-package 'smart-mode-line)
+	(sml/setup)
+	(after 'evil
+	  (defvar dotemacs--original-mode-line-bg (face-background 'mode-line))
+	  (defadvice evil-set-cursor-color (after dotemacs activate)
+	    (cond ((evil-emacs-state-p)
+		   (set-face-background 'mode-line "#440000"))
+		  ((evil-insert-state-p)
+		   (set-face-background 'mode-line "#002244"))
+		  ((evil-visual-state-p)
+		   (set-face-background 'mode-line "#440044"))
+		  (t
+		   (set-face-background 'mode-line dotemacs--original-mode-line-bg))))))
+    (require-package 'spaceline)
+    (require 'spaceline-config)
+    (setq spaceline-highlight-face-func #'spaceline-highlight-face-evil-state)
+    (set-face-attribute 'spaceline-evil-emacs nil :background "red" :foreground "white")
+    (spaceline-spacemacs-theme)
+    (spaceline-info-mode)
+    (after "helm-autoloads"
+      (spaceline-helm-mode))))
 
 
 (when (fboundp 'global-prettify-symbols-mode)
