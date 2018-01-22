@@ -80,7 +80,7 @@
   (org-babel-do-load-languages
    'org-babel-load-languages
    '((ipython . t)  ;; ob-ipython has async mode
-     (shell . t)))
+     (sh . t)))
 
   ;; Don't ask for confirmation before execution of src block
   (setq org-confirm-babel-evaluate nil)
