@@ -114,8 +114,8 @@
   (require 'evil-magit)
   (add-hook 'magit-mode-hook 'turn-off-evil-snipe-override-mode))
 
-(require-package 'evil-avy)
-(evil-avy-mode)
+;; (require-package 'evil-avy)
+;; (evil-avy-mode)
 
 
 (require-package 'evil-matchit)
