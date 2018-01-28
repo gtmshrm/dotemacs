@@ -74,8 +74,9 @@
 (add-hook 'lisp-mode-hook #'aggressive-indent-mode)
 
 
-(require-package 'etags-select)
-(setq etags-select-go-if-unambiguous t)
+;; Uncomment this
+;; (require-package 'etags-select)
+;; (setq etags-select-go-if-unambiguous t)
 
 (require-package 'eproject)
 (require 'eproject)
@@ -91,9 +92,10 @@
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 
-(require-package 'framemove)
-(require 'framemove)
-(setq framemove-hook-into-windmove t)
+;; Uncomment this
+;; (require-package 'framemove)
+;; (require 'framemove)
+;; (setq framemove-hook-into-windmove t)
 
 
 (require-package 'discover-my-major)
