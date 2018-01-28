@@ -1,5 +1,6 @@
 (after 'org
   (setq org-directory "~/Dropbox/org")
+  (define-key evil-normal-state-map (kbd "TAB") 'org-cycle)
 
   (defgroup dotemacs-org nil
     "Configuration options for org-mode."
