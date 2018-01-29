@@ -180,7 +180,9 @@
 
 ;; themes
 (require-package 'creamsody-theme)
-(load-theme 'creamsody) ; *zerodark, reverse, sanityinc-solarized-dark, grandshell, ample-zen, ample, manoj-dark
+(require-package 'nord-theme)
+(require-package 'color-theme-sanityinc-solarized)
+(load-theme 'sanityinc-solarized-dark) ; *nord, *creamsody, *zerodark, reverse, sanityinc-solarized-dark, grandshell, ample-zen, ample, manoj-dark
 
 ;; font
 (set-face-attribute 'default nil
