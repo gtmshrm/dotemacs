@@ -189,7 +189,7 @@
                     :family "Iosevka"
                     :weight 'normal
                     :width 'normal
-                    :height 140)
+                    :height 100)
 
 (global-visual-line-mode)
 (xterm-mouse-mode t)
