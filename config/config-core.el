@@ -182,7 +182,7 @@
 ;; (require-package 'creamsody-theme)
 ;; (require-package 'nord-theme)
 ;; (require-package 'color-theme-sanityinc-solarized)
-					;(load-theme 'sanityinc-solarized-dark) ; *nord, *creamsody, *zerodark, reverse, sanityinc-solarized-dark, grandshell, ample-zen, ample, manoj-dark
+;; (load-theme 'sanityinc-solarized-dark) ; *nord, *creamsody, *zerodark, reverse, sanityinc-solarized-dark, grandshell, ample-zen, ample, manoj-dark
 
 ;; font
 (set-face-attribute 'default nil
