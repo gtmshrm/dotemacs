@@ -14,7 +14,6 @@
   (when (fboundp 'tool-bar-mode) (tool-bar-mode -1))
   (when (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
   (when (fboundp 'menu-bar-mode) (menu-bar-mode -1))
-  (toggle-frame-maximized)
 
   (defgroup dotemacs nil
     "Custom configuration for dotemacs."
@@ -26,7 +25,7 @@
     :group 'dotemacs)
 
   (defcustom dotemacs-completion-engine
-    'auto-complete
+    'company
     "The completion engine the use."
     :type '(radio
             (const :tag "company-mode" company)
