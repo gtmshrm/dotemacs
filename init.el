@@ -55,6 +55,8 @@
   (setq package-enable-at-startup nil)
   (package-initialize)
 
+  (prefer-coding-system 'utf-8)
+
   (load (concat core-directory "core-boot"))
 
   (setq custom-file (concat user-emacs-directory "custom.el"))

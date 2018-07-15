@@ -177,19 +177,13 @@
 (setq inhibit-startup-echo-area-message t)
 (setq inhibit-startup-message t)
 
-
-;; themes
-;; (require-package 'creamsody-theme)
-;; (require-package 'nord-theme)
-;; (require-package 'color-theme-sanityinc-solarized)
-;; (load-theme 'sanityinc-solarized-dark) ; *nord, *creamsody, *zerodark, reverse, sanityinc-solarized-dark, grandshell, ample-zen, ample, manoj-dark
-
 ;; font
-(set-face-attribute 'default nil
-                    :family "Iosevka"
-                    :weight 'normal
-                    :width 'normal
-                    :height 100)
+(set-frame-font "Menlo:pixelsize=12")
+;; (set-face-attribute 'default nil
+;;                     :family "menlo"
+;;                     :weight 'normal
+;;                     :width 'normal
+;;                     :height 100)
 
 (global-visual-line-mode)
 (xterm-mouse-mode t)

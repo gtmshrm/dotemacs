@@ -6,7 +6,7 @@
 (setq ido-save-directory-list-file (concat dotemacs-cache-directory "ido.last"))
 
 (after 'ido
-  (require-package 'ido-ubiquitous)
+  (require-package 'ido-completing-read+)
 
   (require-package 'flx-ido)
   (flx-ido-mode t)
