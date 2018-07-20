@@ -178,7 +178,7 @@
 (setq inhibit-startup-message t)
 
 ;; font
-(set-frame-font "Menlo:pixelsize=12")
+(set-frame-font "DejaVu Sans Mono:pixelsize=12")
 ;; (set-face-attribute 'default nil
 ;;                     :family "menlo"
 ;;                     :weight 'normal
